@@ -12,6 +12,9 @@
 		FD96D39B220ECB1000C8B621 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD96D399220ECB1000C8B621 /* Main.storyboard */; };
 		FD96D39D220ECB1200C8B621 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD96D39C220ECB1200C8B621 /* Assets.xcassets */; };
 		FD96D3A0220ECB1200C8B621 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD96D39E220ECB1200C8B621 /* LaunchScreen.storyboard */; };
+		FDE530DA2217F94200544B47 /* questionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE530D92217F94200544B47 /* questionBank.swift */; };
+		FDE530DC221BC6F300544B47 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE530DB221BC6F300544B47 /* Question.swift */; };
+		FDE530DE221BC76A00544B47 /* myQuestion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE530DD221BC76A00544B47 /* myQuestion.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		FD96D39C220ECB1200C8B621 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD96D39F220ECB1200C8B621 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD96D3A1220ECB1200C8B621 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FDE530D92217F94200544B47 /* questionBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = questionBank.swift; sourceTree = "<group>"; };
+		FDE530DB221BC6F300544B47 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		FDE530DD221BC76A00544B47 /* myQuestion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = myQuestion.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +41,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FD95ED5C220ED98900F5D46E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FDE530D92217F94200544B47 /* questionBank.swift */,
+				FDE530DB221BC6F300544B47 /* Question.swift */,
+				FDE530DD221BC76A00544B47 /* myQuestion.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FD95ED5D220ED99400F5D46E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				FD96D395220ECB1000C8B621 /* AppDelegate.swift */,
+				FD96D397220ECB1000C8B621 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		FD95ED5E220ED99800F5D46E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				FD96D39E220ECB1200C8B621 /* LaunchScreen.storyboard */,
+				FD96D399220ECB1000C8B621 /* Main.storyboard */,
+				FD96D39C220ECB1200C8B621 /* Assets.xcassets */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FD95ED5F220ED9E600F5D46E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FD96D3A1220ECB1200C8B621 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
 		FD96D389220ECB1000C8B621 = {
 			isa = PBXGroup;
 			children = (
@@ -54,12 +97,10 @@
 		FD96D394220ECB1000C8B621 /* ScholarQuiz */ = {
 			isa = PBXGroup;
 			children = (
-				FD96D395220ECB1000C8B621 /* AppDelegate.swift */,
-				FD96D397220ECB1000C8B621 /* ViewController.swift */,
-				FD96D399220ECB1000C8B621 /* Main.storyboard */,
-				FD96D39C220ECB1200C8B621 /* Assets.xcassets */,
-				FD96D39E220ECB1200C8B621 /* LaunchScreen.storyboard */,
-				FD96D3A1220ECB1200C8B621 /* Info.plist */,
+				FD95ED5F220ED9E600F5D46E /* Supporting Files */,
+				FD95ED5E220ED99800F5D46E /* View */,
+				FD95ED5D220ED99400F5D46E /* Controller */,
+				FD95ED5C220ED98900F5D46E /* Model */,
 			);
 			path = ScholarQuiz;
 			sourceTree = "<group>";
@@ -136,6 +177,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD96D398220ECB1000C8B621 /* ViewController.swift in Sources */,
+				FDE530DE221BC76A00544B47 /* myQuestion.swift in Sources */,
+				FDE530DC221BC6F300544B47 /* Question.swift in Sources */,
+				FDE530DA2217F94200544B47 /* questionBank.swift in Sources */,
 				FD96D396220ECB1000C8B621 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
